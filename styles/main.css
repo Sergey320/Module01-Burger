@@ -404,6 +404,9 @@ header {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    padding-right: 15px;
+    padding-left: 15px;
+    
 }
 .content {
     color: #FAF9F9;
@@ -415,10 +418,10 @@ header {
     font-size: 120px;
     font-weight: 800;
     text-transform: uppercase;
-    line-height: 120px;
-    margin-bottom: 40px;
+    line-height: 143px;
+    margin-bottom: 30px;
     margin-top: 0;
-    margin-bottom: 0;
+    
 }
 .content-title span {
     color: #FBB731;
@@ -432,7 +435,7 @@ header {
     font-family: 'Open Sans', sans-serif;
     font-size: 19px;
     line-height: 1.4;
-    margin-bottom: 42px;
+    margin-bottom: 48px;
 }
 .content-link,
 .promo a {
@@ -477,11 +480,11 @@ header {
 }
 .promo-left {
     background-image: url(../img/promo-left.png);
-    padding: 116px 50px;
+    padding: 121px 37px;
 }
 .promo-right {
     background-image: url(../img/promo-right.png);
-    padding: 102px 50px;
+    padding: 105px 36px;
 }
 .sale {
     font-size: 14px;
@@ -524,6 +527,17 @@ header {
 @media (min-width: 1001px) {
     .footer-list + .footer-list-tel {
         display: none;
+    }
+   
+}
+@media (max-width: 1200px) {
+    .main img {
+        width: 700px;
+       
+        bottom: -27px;
+    }
+    .visual-bg {
+        width: 198px;
     }
 }
 @media (max-width: 1000px) {
@@ -580,6 +594,12 @@ header {
     .menu-other .menu-grid-cover img {
         height: 320px;
     }
+    .main img {
+        width: 496px;
+        bottom: -70px;
+    }
+    
+   
 }
 @media (min-width: 766px) {
     .header-burger {
@@ -598,6 +618,50 @@ header {
     }
     .button-up.visible {
         display: none;
+    }
+    .content {
+        padding-top: 45px;
+        padding-bottom: 120px;
+        flex: 0 0 530px;
+    }
+    .content-title span {
+        font-size: 22px;
+    }
+    .content-title {
+        font-size: 86px;
+        line-height: 111%;
+    }
+    .content-text {
+        font-size: 14px;
+        margin-bottom: 31px;
+    }
+    .main img {
+        right: -142px;
+        width: 496px;
+        bottom: -82px;
+    }
+    .content-link, .promo a {
+        font-size: 13px;
+        padding: 18px 42px
+    }
+    .promo-left, .promo-right {
+        height: 290px;
+    }
+    .promo-left {
+        padding: 47px 21px;
+    }
+    .promo-right {
+        padding: 60px 28px;
+    }
+    .promo {
+        padding-top: 107px;
+        padding-bottom: 46px;
+    }
+    .footer-indx {
+        padding-top: 61px;
+        padding-bottom: 63px;
+        margin-top: 104px;
+    
     }
 }
 @media (max-width: 567px) {
@@ -708,7 +772,30 @@ header {
         grid-area: tel;
         text-align: right;
     }
+    .content-title span {
+        font-size: 14px;
+    }
+    .content-title {
+        font-size: 58px;
+    }
+    .content-text  {
+        font-size: 13px;
+        width: 290px;
+    }
+    .main img {
+        width: 390px;
+        right: 116px;
+       
+       
+    }
 }
+@media (max-width: 650px) {
+    .promo .wrapper {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
 @media (max-width: 360px) {
     .header-logo {
         width: 116px;
@@ -719,10 +806,45 @@ header {
         font-size: 13px;
         margin-top: 18px;
     }
+    .main img {
+        width: 339px;
+        right: 312px;
+        bottom: -125px;
+    }
 }
 @media (max-width: 320px) {
     .banner-box {
         background-position: 25% center;
+    }
+    .main img {
+        width: 339px;
+        right: 312px;
+        bottom: -125px;
+    }
+    .promo .wrapper{
+        padding: 0;
+    }
+    .content {
+        
+        padding-bottom: 169px;  
+    }
+    .cost {
+        font-size: 55px;
+    }
+    .promo-left .promo-description  {
+        font-size: 13px;
+    }
+    .free {
+        font-size: 39px;
+    }
+    .promo-left {
+        padding: 33px 13px;
+    }
+    .promo-right {
+        padding: 66px 9px;
+    }
+    .promo {
+        padding-bottom: 2px;
     }
 }
 /*--------Modal-------- */
