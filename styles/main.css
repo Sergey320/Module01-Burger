@@ -544,6 +544,10 @@ header {
     .container {
         max-width: 748px;
     }
+    .wrapper {
+        max-width: 748px;
+        overflow: hidden;
+    }
     .header-logo {
         width: 150px;
         height: 48px;
